@@ -192,7 +192,7 @@ CREATE TABLE activity_logs (
     description TEXT,
     related_table VARCHAR(50),
     related_id INT,
-    ip_address VARCHAR(45),
+    ip_address VARCHAR(45),a
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(user_id),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)

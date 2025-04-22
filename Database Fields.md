@@ -23,21 +23,21 @@
 
 ### 2. Tabla de Usuarios (Users)
 
-|Campo|Tipo de Dato|Descripción|
-|---|---|---|
-|user_id|INT (Auto-increment)|ID único del usuario del sistema|
-|username|VARCHAR(50)|Nombre de usuario para login (único)|
-|email|VARCHAR(100)|Correo electrónico (único)|
-|password_hash|VARCHAR(255)|Contraseña encriptada|
-|first_name|VARCHAR(50)|Nombre real del usuario|
-|last_name|VARCHAR(50)|Apellido real del usuario|
-|role|ENUM|Rol: 'admin', 'sales', 'support', 'manager', 'warehouse'|
-|department|VARCHAR(50)|Departamento al que pertenece|
-|phone|VARCHAR(20)|Teléfono de contacto|
-|is_active|BOOLEAN|Si el usuario está activo (true/false)|
-|last_login|DATETIME|Fecha del último inicio de sesión|
-|created_at|TIMESTAMP|Fecha de creación|
-|updated_at|TIMESTAMP|Fecha de última actualización|
+| Campo         | Tipo de Dato         | Descripción                                              |     |
+| ------------- | -------------------- | -------------------------------------------------------- | --- |
+| user_id       | INT (Auto-increment) | ID único del usuario del sistema                         |     |
+| username      | VARCHAR(50)          | Nombre de usuario para login (único)                     |     |
+| email         | VARCHAR(100)         | Correo electrónico (único)                               |     |
+| password_hash | VARCHAR(255)         | Contraseña encriptada                                    |     |
+| first_name    | VARCHAR(50)          | Nombre real del usuario                                  |     |
+| last_name     | VARCHAR(50)          | Apellido real del usuario                                |     |
+| role          | ENUM                 | Rol: 'admin', 'sales', 'support', 'manager', 'warehouse' |     |
+| department    | VARCHAR(50)          | Departamento al que pertenece                            |     |
+| phone         | VARCHAR(20)          | Teléfono de contacto                                     |     |
+| is_active     | BOOLEAN              | Si el usuario está activo (true/false)                   |     |
+| last_login    | DATETIME             | Fecha del último inicio de sesión                        |     |
+| created_at    | TIMESTAMP            | Fecha de creación                                        |     |
+| updated_at    | TIMESTAMP            | Fecha de última actualización                            |     |
 
 ### 3. Tabla de Productos (Products)
 
@@ -121,17 +121,17 @@
 
 ### 8. Tabla de Detalles de Orden (Order Items)
 
-|Campo|Tipo de Dato|Descripción|
-|---|---|---|
-|order_item_id|INT (Auto-increment)|ID único del item|
-|order_id|INT|ID de la orden relacionada|
-|product_id|INT|ID del producto (NULL si es servicio)|
-|service_id|INT|ID del servicio (NULL si es producto)|
-|quantity|INT|Cantidad comprada|
-|unit_price|DECIMAL(10,2)|Precio unitario en el momento de la compra|
-|tax_rate|DECIMAL(5,2)|Impuesto aplicado|
-|discount|DECIMAL(5,2)|Descuento aplicado (%)|
-|notes|TEXT|Notas específicas del item|
+| Campo         | Tipo de Dato         | Descripción                                |
+| ------------- | -------------------- | ------------------------------------------ |
+| order_item_id | INT (Auto-increment) | ID único del item                          |
+| order_id      | INT                  | ID de la orden relacionada                 |
+| product_id    | INT                  | ID del producto (NULL si es servicio)      |
+| service_id    | INT                  | ID del servicio (NULL si es producto)      |
+| quantity      | INT                  | Cantidad comprada                          |
+| unit_price    | DECIMAL(10,2)        | Precio unitario en el momento de la compra |
+| tax_rate      | DECIMAL(5,2)         | Impuesto aplicado                          |
+| discount      | DECIMAL(5,2)         | Descuento aplicado (%)                     |
+| notes         | TEXT                 | Notas específicas del item                 |
 
 ### 9. Tabla de Tickets de Soporte
 
